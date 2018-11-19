@@ -1,0 +1,45 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
+  },
+  "extends": ["airbnb-base", "plugin:vue/essential", "prettier"],
+  "settings": {
+    "import/resolver": "meteor"
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true
+      }
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ],
+    "// meteor config": "These are taken from the @meteorjs/eslint-config-meteor package",
+    "import/no-absolute-path": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id", "_ensureIndex"]
+      }
+    ]
+  }
+}
