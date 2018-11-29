@@ -2,7 +2,7 @@
   "name": "meteor-vue-minimal",
   "private": true,
   "scripts": {
-    "start": "meteor run",
+    "start": "NO_HMR=1 meteor run",
     "debug": "meteor run --inspect-brk",
     "test": "meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
@@ -14,7 +14,7 @@
     "meteor-node-stubs": "^0.4.1",
     "vue": "^2.5.17",
     "vue-meteor-tracker": "^2.0.0-beta.4",
-    "vue-router": "^3.0.1",
+    "vue-router": "^3.0.2",
     "vuex": "^3.0.1"
   },
   "meteor": {
